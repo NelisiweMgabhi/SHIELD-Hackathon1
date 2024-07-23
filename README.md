@@ -1,3 +1,7 @@
+##GROUP ONE PROJECT
+This is group one's Final project for the SHIELD-Hackathon1
+
+
 ## WEB HACKATHON 1
 Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
 

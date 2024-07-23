@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    background-color: rgb(0, 0, 0);
+    color: rgb(168, 165, 165);
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    line-height: 20px;
+    padding-top: 180px ;
+    height: 100vh;
+}
+
+hr{
+    color: rgb(0, 234, 255);
+    border: 1px solid rgb(0, 234, 255);
+}
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif; !important;
+    font-weight: 700;
+   }
+h2,h3{
+    text-align: center;
+}
+h2,h3,h4{
+    color: rgb(0, 234, 255);
+    font-size: 30px;
+}
+
+h5{
+    font-size: 25px;
+    color:rgb(187, 184, 184);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+    font-style: italic;
+    /* margin-bottom: 10px; */
+    
+}
+h5:hover{
+    text-decoration: underline;
+}
+/* NAVBAR */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 10px 10%; */
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #000000;
+    height: 80px;
+    margin-bottom: 100px;
+    transition: transform 0.3s ease;
+    /* border-bottom: 4px solid rgb(0, 234, 255); */
+    /* box-shadow: 0 8px 10px rgb(0, 234, 255); */
+}
+nav:hover{
+    border-bottom: 1px solid rgb(0, 234, 255);
+    box-shadow: 0 8px 10px rgb(0, 234, 255);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    /* margin: 10px 20px; */
+    margin-left: 35px;
+}
+nav.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  nav ul li a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    font-style: italic;
+    
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(0, 234, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    font-size: 25px;
+    color:rgb(95, 220, 240);
+    border-bottom: 1px solid rgb(0, 234, 255);
+    box-shadow: 0 8px 10px rgb(0, 234, 255);
+}
+nav ul li a:hover::after{
+width: 100%;
+font-size: 25px;
+color:rgb(0, 234, 255);
+}
+.scroll-indicator {
+    position: fixed;
+    top: 80px; 
+    width: 0;
+    height: 8px;
+    background-color: rgb(0, 234, 255);
+    z-index: 1000;
+    transition: width 0.25s ease-out;
+}
+
+/* ABOUT */
+.row-about{
+    padding-top: 20px;
+    
+}
+.code{
+    margin-left: 30px;
+    padding-left: 30px;
+}
+.occ{
+    font-size: 25px;
+    padding-left: 40px;
+}
+.occ:hover{
+    color: rgb(0, 234, 255);
+}
+.mal{
+    color: rgb(0, 234, 255);
+}
+.mal:hover{
+    color: rgb(37, 36, 36);
+}
+
+.bio{
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+.para{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.photo{
+    border-radius: 50% ;
+    float: left;
+    margin-right: 40px;
+    margin-left: 30px;
+    border-bottom: 5px solid rgb(0, 234, 255);
+    box-shadow: 0 22px 35px rgba(0, 0, 0,);
+}
+
+/* SKILLS */
+#skills{
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 10px;
+    margin: 10px  40px;
+    padding: 40px 0;
+    
+}
+#skills:hover{
+    box-shadow: 0 8px 16px rgb(0, 234, 255);
+}
+.lis{
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgb(0, 234, 255);
+}
+.lis > li{
+    padding: 5px;
+}
+
+/* PROJECT */
+.imagebox {
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.imagebox img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.imagebox img:hover {
+    transform: scale(0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+.imagebox > span{
+    margin-top: 20px;
+    color: orange;
+     font-weight: bold;
+     padding-top: 50px;
+}
+
+#project{
+    display: flex; 
+    gap: 20px;
+    margin-top:30px;
+    height: 100vh;
+}
+
+.proj{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(0, 234, 255);
+    font-style: italic;
+}
+.more{
+    font-size: 20px;
+    color: orange;
+}
+
+/* EXPERIENCE */
+#experience{
+    margin-bottom: 50px;
+    display: flex; 
+    gap: 10px;
+}
+.exp{
+    margin-top: 30px;
+    /* justify-content: center;
+    align-items: center; */
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    padding: 5px 15px;
+    
+}
+.exp:hover{
+    transform: scale(0.9);
+    box-shadow: 0 8px 16px rgb(0, 234, 255);
+}
+.h1{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 234, 255);
+    font-weight: bold;
+}
+.my-exp{
+    margin-left: 20px;
+    list-style-type: square;
+}
+.my-exp > li{
+    padding: 5px;
+}
+
+/* EDUCATION */
+#education{
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 10px;
+    margin: 10px  40px;
+    padding: 40px 0;
+    
+}
+#education:hover{
+    box-shadow: 0 8px 10px rgb(0, 234, 255);
+}
+/* .inst-1{
+    border-bottom: 1px solid rgb(0, 234, 255);
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgb(0, 234, 255);
+} */
+
+.inst{
+    transition: transform 0.3s ease;
+}
+.inst:hover{
+    transform: scale(0.9);
+}
+.inst > .fa-solid{
+    color: rgb(0, 234, 255);
+    margin-right: 10px;
+}
+#institution{
+    text-align: center;
+      
+  }
+  #institution > p{
+      font-size: 20px;
+  
+  }
+  .inst > p{
+      font-size: 20px;
+  }
+
+/* CONTACTS */
+
+#contacts > span {
+    font-size: 48px;
+    transition: font-size 0.3s ease; 
+    cursor: pointer;
+    margin-right: 10px;
+    font-size:40px
+}
+
+#contacts {
+    display: flex; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.contact-l {
+    flex: 1; 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.material-icons {
+    /* vertical-align: middle; */
+    margin-right: 8px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 2px;
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: rgb(0, 234, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    transition: transform 0.3s ease;
+    
+}
+
+form input[type="submit"]:hover {
+    background-color: orange;
+    color: black;
+    transform: scale(0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cont{
+    padding: 30px 40px;
+    margin-left: 0px;
+    /* text-align: center; */
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 10px;
+    /* margin: 10px  40px;
+    padding: 40px 0; */
+    box-shadow: 0 8px 10px rgb(0, 0, 0);
+    
+}
+.cont:hover{
+    box-shadow: 0 8px 16px rgb(0, 234, 255);
+}
+.cont > span{
+    margin: 20px;
+}
+.conta{
+    margin-right: 20px;
+}
+.hidden {
+    display: none;
+}
+.fa-brands {
+    color: rgb(0, 234, 255);
+    padding: 15px;
+    /* margin-left: 10px; */
+    transition: transform 0.3s ease;
+}
+.fa-brands:hover{
+    transform: scale(0.9);
+    border-radius: 50%;
+    box-shadow: 0 3px 5px rgb(0, 234, 255);
+}
+#socials {
+    padding: 70px;
+}
+
+#submitMessage {
+    margin-top: 20px;
+    color: orange;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    margin-top: 10px;
+}
